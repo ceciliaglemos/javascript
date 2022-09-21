@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>NACIONALIDADE</title>
+    <style>
+      body {
+         font: normal 20px Arial;
+         background-image: url(passaporte.png);
+         background-size: cover;
+         background-attachment: fixed;
+         background-repeat: no-repeat;
+         background-position: center top;
+      }
+      header {
+        width: fit-content;
+        background-color: rgba(255, 255, 255, 0.322);
+        color: rgb(31, 31, 31);
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.486);
+      }
+      main {
+        width: fit-content;
+        background-color: rgba(255, 255, 255, 0.322);
+        color: rgb(31, 31, 31);
+        text-align: center;
+        margin: auto;
+        margin-top: 50px;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.486);
+      }
+      div#res {
+        padding: 10px;
+      }
+    </style>
+</head>
+<body>
+  <header> 
+    <h1>Teste sua nacionalidade</h1>
+  </header>  
+  <main>
+   Digite seu país de nascimento: <input type="text" name="vnationality" id="vnationality">
+   <input type="button" value="Testar" onclick="teste()">
+   <div id="res">
+
+   </div>
+   <script>
+
+    function teste() {
+        let nation = document.getElementById('vnationality')
+        let res = document.getElementById('res')
+        let nat = (vnationality.value)
+
+        if (nat == 'Brasil') {
+            res.innerHTML = 'Você é brasileiro!'
+        }
+        else {
+            res.innerHTML = 'Você é estrangeiro!'
+        }
+    }
+    
+   </script>
+  </main>
+</body>
+</html>
