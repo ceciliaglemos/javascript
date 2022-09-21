@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>Troco</title>
+    <style>
+        body{
+            background-color: blanchedalmond;
+            font: normal 20px Arial;
+            padding: 0px;
+            margin: 0px;
+        }
+        header{
+            background-image: url(coin.jpg);
+            background-size: cover;
+            width: 96vw;
+            height: 150px;
+            padding: 10px;
+            font: bold 30px Arial;
+            text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.692);
+        }
+        main {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        #calc{
+            width: 200px;
+            height: 50px;
+            font: normal 20px Arial;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Calculando Troco</h1>
+    </header>
+    <main>
+        <input type="button" value="Comprar produto" id="calc" onclick="calcular()">
+    </main>
+    <script>
+        function calcular() {
+        let prod = prompt('Que produto você está comprando?') 
+        let cost = prompt(`Quanto custa ${prod} que você está comprando?`)
+        let pay = prompt(`Qual foi o valor que você pagou em ${prod}`)
+        let change = Number(pay) - Number(cost)
+
+        alert(`Você comrpou um ${prod} que custou R$${cost}.
+Deu R$${pay} em dinheiro e vai receber R$${change}.
+Volte sempre!`)
+    
+    }
+    </script>
+
+</body>
+</html>
