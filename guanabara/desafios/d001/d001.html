@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>Mensagens</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    body {
+         font: normal 18px Arial;
+    }
+
+    div {
+        background-image: linear-gradient(to top, whitesmoke, lightgrey);
+        display: inline-block;
+        width: 150px;
+        height: 50px;
+        text-align: center;
+        font-size: 20px;
+        padding-top: 25px;
+        border: 1px solid rgba(0, 0, 0, 0.507);
+    }
+    </style>
+</head>
+<body>
+    <h1>Desafio das Mensagens</h1>
+    <div onclick="b1()" class="botao">
+        Botão 1
+    </div>
+    <div onclick="b2()" class="botao">
+        Botão 2
+    </div>
+    <div onclick="b3()" class="botao">
+        Botão 3
+    </div>
+
+    <script>
+       let botoes = document.getElementsByClassName("botao");
+
+       for (botao of botoes) {
+         botao.addEventListener('mouseenter', entrar);
+         botao.addEventListener('mouseout', sair);
+        }
+
+        function entrar() {
+            this.style.background = 'gray';
+        }
+        function sair(){
+            this.style.background = 'lightgray';
+        }
+
+        function b1() {
+            alert('Você Clicou no 1º Botão!');
+        }
+        function b2() {
+            alert('Você Clicou no 2º Botão!');
+        }
+        function b3() {
+            alert('Você Clicou no 3º Botão!');
+        }
+    </script>
+</body>
+</html>

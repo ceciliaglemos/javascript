@@ -1,0 +1,32 @@
+@charset "UTF - 8";
+
+body { 
+    font: normal 20px Arial;
+    background-image:linear-gradient(to top, #120c56, rgb(0, 0, 0));
+    width: 97vw;
+    height: 97vh;
+    margin: 0px;
+    padding: 10px;
+    color: whitesmoke;
+    text-shadow: 1px 1px 5px rgba(226, 226, 226, 0.623);
+}
+
+header {
+    background-color: rgba(215, 233, 250, 0.363);
+    width: max-content;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+main {
+    background-color:  rgba(215, 233, 250, 0.363);
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+  
