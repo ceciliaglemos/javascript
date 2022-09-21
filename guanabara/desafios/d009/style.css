@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body {
+    position: relative;
+    background-color: gray;
+    font: normal 20px Arial;
+    color: white;
+    background: #002c1f;  
+    background:linear-gradient(to left, #4800a7, #00794c);
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    background-color: rgba(250, 235, 215, 0.212);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 20px;
+    text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.568);
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    text-align: center;
+    margin: auto;
+    background-color: rgba(250, 235, 215, 0.212);
+    width: max-content;
+    height: max-content;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+#button{
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+}
