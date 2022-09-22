@@ -9,15 +9,27 @@
     <link rel="stylesheet" href="style.css">
     
 </head>
-<body>
+<body class="">
    
-    <header>
-        <h1>Ano Bissexto </h1>
+    <header class="conteudo">
+        <div class="caixa">
+            <span>
+                <h1>Ano Bissexto </h1>
+            </span>
+        </div>
     </header>
-    <main>
-        <input type="button" value="Verificar" id="button" onclick="verificar()">
-        <div id="res"> 
-            <p>Clique no botão acima para iniciar.</p>
+    <main class="conteudo" id="one">
+        <div class="caixa" id="two">
+            <span>
+                <input type="button" value="Verificar" id="button" onclick="verificar()">
+                <div id="res">
+                    <p>Clique no botão acima para iniciar.</p>
+                </div>
+            </span>
+        </div>
+        <div>
+            <span></span>
+            <span></span>
         </div>
     </main>
     <script src="script.js"></script>
